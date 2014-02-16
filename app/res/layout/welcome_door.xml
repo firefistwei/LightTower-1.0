@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/welcome_bg" >
+        
+        <ImageView
+            android:id="@+id/welcome_up"
+            android:scaleType="fitXY"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"            
+            android:src="@drawable/welcome_up2" />
+        
+        <ImageView
+            android:id="@+id/welcome_down"
+            android:visibility="visible"
+            android:scaleType="fitXY"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"            
+            android:src="@drawable/welcome_down2" />
+
+    </RelativeLayout>

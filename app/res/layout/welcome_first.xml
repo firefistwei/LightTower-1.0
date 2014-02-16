@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/wel_bg">
+     <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="@drawable/wel_center_btn"
+         android:layout_centerInParent="true"
+         android:onClick="welcome_btn"
+         />
+     <ImageView 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/wel_head_text"
+         android:layout_marginTop="70dp"
+         android:layout_centerHorizontal="true"
+         />
+     <TextView 
+         android:layout_width="220dp"
+         android:layout_height="35dp"
+         android:layout_marginBottom="60dp"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:background="@drawable/wel_down_text"
+         android:gravity="center"
+         android:text="演示用户：Dave"
+         android:textColor="#F5F5F5"
+         android:textSize="20dp"
+         />
+
+
+
+    </RelativeLayout>

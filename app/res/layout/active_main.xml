@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_grid"
+    android:orientation="vertical" >
+
+     
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:padding="3dp"
+            android:src="@drawable/title_3" />
+    </LinearLayout>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="600dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="@null" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAFAFA"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="130dp" >
+
+            <ImageView
+                android:id="@+id/active_anim_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/active_anim"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/active_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="70dp"
+                android:layout_marginTop="25dp"
+                android:paddingLeft="5dp"
+                android:text="精确时间和位置" />
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="1dp"
+                android:layout_alignLeft="@id/active_tv1"
+                android:layout_below="@id/active_tv1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:background="#664F4F4F" />
+
+            <TextView
+                android:id="@+id/active_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/active_tv1"
+                android:layout_below="@id/active_tv1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="6dp"
+                android:text="邀请好友一起吧！" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@id/active_tv1"
+                android:layout_below="@id/active_tv2"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/empty_btn04"
+                android:padding="4dp"
+                android:text="发布个人活动"
+                android:textColor="#FAFAFA"
+                android:textSize="18sp"
+                android:onClick="active_main_btn" />"
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentBottom="true"
+                android:background="#78ac04" />
+        </RelativeLayout>
+
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="360dp"
+            android:background="#FAFAFA">
+        <ListView
+            android:id="@+id/active_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp" >  
+            
+        </ListView>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
